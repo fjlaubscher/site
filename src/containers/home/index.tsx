@@ -1,13 +1,10 @@
-import React, { Suspense, lazy } from 'react';
+import React from 'react';
+import { Header, Segment } from 'semantic-ui-react';
 
-import Loader from '../../components/loader';
-
-const Home = lazy(() => import('./home'));
-
-const LazyHome = (props: JSX.IntrinsicAttributes) => (
-  <Suspense fallback={<Loader />}>
-    <Home {...props} />
-  </Suspense>
+const Home = () => (
+  <Segment basic>
+    <Header as="h1">Francois Laubscher</Header>
+  </Segment>
 );
 
-export default LazyHome;
+export default Home;
