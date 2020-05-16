@@ -1,0 +1,36 @@
+.sidebar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--terracotta);
+  color: white;
+  transform: translateX(75vw);
+  width: 75vw;
+  transition: transform 0.2s ease-in-out, z-index 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.sidebar.visible {
+  transform: translateX(0);
+}
+
+.sidebar a {
+  margin-top: 1rem;
+  font-size: inherit;
+}
+
+.close {
+  align-self: flex-end;
+  outline: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  color: inherit;
+}

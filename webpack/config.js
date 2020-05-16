@@ -6,10 +6,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
+const postcssPresetEnv = require('postcss-preset-env');
 
 const publicPath = process.env.PUBLIC_URL || '/';
 const buildPath = path.join(__dirname, '..', 'build');
 const assetsPath = path.join(__dirname, '..', 'src', 'assets');
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   devtool: 'source-map',
@@ -17,7 +19,7 @@ module.exports = {
   output: {
     path: buildPath,
     filename: '[name].bundle.js',
-    chunkFilename: '[name].bundle.js'
+    chunkFilename: '[name].bundle.js',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -48,7 +50,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              hmr: process.env.NODE_ENV !== 'production',
+              hmr: !isProduction,
             },
           },
           {
@@ -62,7 +64,8 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [autoprefixer()],
+              ident: 'postcss',
+              plugins: () => [autoprefixer(), postcssPresetEnv()],
             },
           },
         ],
@@ -80,10 +83,11 @@ module.exports = {
       template: './src/index.html',
       publicPath,
     }),
-    new WorkboxPlugin.GenerateSW({
-      swDest: 'sw.js',
-      clientsClaim: true,
-      skipWaiting: true,
-    }),
-  ],
+    isProduction &&
+      new WorkboxPlugin.GenerateSW({
+        swDest: 'sw.js',
+        clientsClaim: true,
+        skipWaiting: true,
+      }),
+  ].filter(x => x !== false),
 };

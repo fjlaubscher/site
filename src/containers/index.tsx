@@ -1,6 +1,5 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Loader } from 'semantic-ui-react';
 
 import Layout from '../components/layout';
 
@@ -11,7 +10,7 @@ const NotFound = lazy(() => import('./not-found'));
 
 const App = () => (
   <Layout>
-    <Suspense fallback={<Loader active />}>
+    <Suspense fallback={<span>loading</span>}>
       <Switch>
         <Route from="/" component={Home} exact />
         <Route from="/health" component={Health} exact />

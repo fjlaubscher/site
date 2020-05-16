@@ -1,0 +1,19 @@
+.background {
+  background-color: white;
+}
+
+.background.alternate {
+  background-color: var(--wildsand);
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 1rem 0;
+  }
+}
