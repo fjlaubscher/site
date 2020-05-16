@@ -1,0 +1,225 @@
+[
+  {
+    "from": "Sept 2018",
+    "to": "June 2020",
+    "employer": "Leadhome",
+    "location": "Remote",
+    "role": "Software Engineer",
+    "projects": [
+      {
+        "name": "Book a Viewing",
+        "description": "Online property viewing booking wizard.",
+        "tech": [
+          "React",
+          "Redux",
+          "Styled Components",
+          "Cypress"
+        ]
+      },
+      {
+        "name": "leadhome.co.za - Estate Agents",
+        "description": "Micro UI functioning as a new section of the website to find Leadhome estate agents by province, metro and suburb with a massive focus on SEO to improve organic traffic. This project also included a back-end API which pulls data from our microservices and migrates estate agent data from Wordpress to our internal CRM.",
+        "tech": [
+          "React",
+          "Styled Components",
+          "dotnet core",
+          "GraphQL",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "name": "leadhome.co.za",
+        "description": "Partial rebuild of the Leadhome website while keeping the older version of the website running and using nginx to proxy requests to either one of the apps while keeping the domain the same.",
+        "tech": [
+          "React",
+          "Styled Components",
+          "nginx",
+          "NextJS"
+        ]
+      },
+      {
+        "name": "Book a Valuation",
+        "description": "Online property valuation booking wizard.",
+        "tech": [
+          "React",
+          "Redux",
+          "Styled Components",
+          "Cypress"
+        ]
+      },
+      {
+        "name": "Carbon",
+        "link": "https://github.com/leadhomesa/carbon",
+        "description": "Open source PWA boilerplate used for internal React front-ends.",
+        "tech": [
+          "React",
+          "Webpack",
+          "Styled Components"
+        ]
+      },
+      {
+        "name": "Osmosis - Internal, custom built CRM",
+        "description": "Osmo GraphQL api built with dotnet core.",
+        "tech": [
+          "dotnet core",
+          "GraphQL",
+          "PostgreSQL",
+          "RabbitMQ"
+        ]
+      }
+    ]
+  },
+  {
+    "from": "Jan 2017",
+    "to": "Aug 2018",
+    "employer": "MADE",
+    "location": "Cape Town",
+    "role": "Software Engineer",
+    "projects": [
+      {
+        "name": "made.co.za",
+        "description": "MADE Agency website. (Now changed)",
+        "tech": [
+          "React",
+          "Node",
+          "RxJS",
+          "Styled Components"
+        ]
+      },
+      {
+        "name": "Lobbsta",
+        "description": "Front-end development of an online e-sports platform to schedule, share and view real-time stats of Dota 2 matches.",
+        "tech": [
+          "React",
+          "Redux",
+          "RxJS",
+          "SCSS"
+        ]
+      },
+      {
+        "name": "Concierge",
+        "description": "The Concierge app works in conjunction with its software platform to allow for easy, on-the-go management of its events and guests.",
+        "tech": [
+          "Node",
+          "Angular",
+          "MongoDB",
+          "SCSS"
+        ]
+      },
+      {
+        "name": "XLR",
+        "link": "https://github.com/madeagency/xlr",
+        "description": "Open source MS Excel spreadsheet generator built for NodeJS and used in Concierge.",
+        "tech": [
+          "Node"
+        ]
+      }
+    ]
+  },
+  {
+    "from": "Sept 2016",
+    "to": "Dec 2016",
+    "employer": "Cape Networks",
+    "location": "Cape Town and Remote",
+    "role": "Front-End Developer",
+    "projects": [
+      {
+        "name": "Cape Networks (now Aruba) Dashboard",
+        "description": "Front-end development of the dashboard allowing users to troubleshoot Wi-Fi and improve quality remotely.",
+        "tech": [
+          "React",
+          "Redux",
+          "Firebase",
+          "SCSS"
+        ]
+      }
+    ]
+  },
+  {
+    "from": "Jun 2015",
+    "to": "Aug 2016",
+    "employer": "Wetu",
+    "location": "Cape Town",
+    "role": "Software Engineer",
+    "projects": [
+      {
+        "name": "wetu.com",
+        "description": "Wetu website",
+        "tech": [
+          "ASP.NET MVC",
+          "SCSS"
+        ]
+      },
+      {
+        "name": "Mobile Itinerary SPA",
+        "description": "SPA which allows clients to view their travel itineraries on mobile.",
+        "tech": [
+          "ASP.NET MVC",
+          "JavaScript",
+          "SCSS"
+        ]
+      },
+      {
+        "name": "Specials portal",
+        "description": "Allow clients to create special offers linked to their accommodations listed with Wetu. Clients can search for specials created using the specials search portal",
+        "tech": [
+          "ASP.NET MVC",
+          "JavaScript",
+          "MSSQL SERVER",
+          "RavenDB",
+          "SCSS"
+        ]
+      },
+      {
+        "name": "Internal metrics dashboard",
+        "description": "Dashboard built with D3.js to view internal metrics.",
+        "tech": [
+          "ASP.NET MVC",
+          "JavaScript",
+          "MSSQL SERVER",
+          "RavenDB",
+          "SCSS"
+        ]
+      }
+    ]
+  },
+  {
+    "from": "Mar 2013",
+    "to": "May 2015",
+    "employer": "Intervate",
+    "location": "Cape Town and Remote",
+    "role": "Junior Tech Consultant",
+    "projects": [
+      {
+        "name": "Citizen Reporting (Formerly FixMyCity)",
+        "description": "Reusable mobile app framework and web dashboards",
+        "tech": [
+          "Windows Phone",
+          "ASP.NET",
+          "Azure",
+          "MSSQL Azure"
+        ]
+      },
+      {
+        "name": "JRA Find & Fix",
+        "description": "Windows Phone app and REST api which enables citizens of Johannesburg to report road issues to the Johannesburg Road Agency.",
+        "tech": [
+          "Windows Phone",
+          "ASP.NET",
+          "Azure",
+          "MSSQL Azure"
+        ]
+      },
+      {
+        "name": "Citizen Scientist",
+        "description": "Windows Phone app and REST api which enables individuals to capture animal sightings and assist in tracking of endangered animals.",
+        "tech": [
+          "Windows Phone",
+          "ASP.NET",
+          "Azure",
+          "MSSQL Azure"
+        ]
+      }
+    ]
+  }
+]

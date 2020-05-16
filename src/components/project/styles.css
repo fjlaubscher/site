@@ -1,0 +1,64 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid #eee;
+  margin-bottom: 2rem;
+}
+
+.project:last-child {
+  border-bottom: 0;
+}
+
+.imageLink {
+  width: 100%;
+  max-width: 640px;
+  margin-bottom: 2rem;
+  border: 1px solid #eee;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.description {
+  max-width: 640px;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.description p {
+  color: gray;
+}
+
+@media (min-width: 1024px) {
+  .project {
+    flex-direction: row;
+    margin: 3rem 0;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .imageLink {
+    margin: 0;
+    margin-right: 3rem;
+    width: 640px;
+  }
+
+  .project:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .project:nth-child(odd) .imageLink {
+    margin-left: 3rem;
+    margin-right: 0;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .imageLink {
+    border-color: var(--tundora);
+  }
+}

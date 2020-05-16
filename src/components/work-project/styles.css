@@ -1,0 +1,17 @@
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  color: gray;
+}
+
+.badge {
+  display: inline-block;
+  margin-right: 0.5rem;
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 0 0.3rem;
+  margin-top: 0.3rem;
+}

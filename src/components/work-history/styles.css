@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.containerTitle {
+  background-color: var(--alabaster) !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: normal;
+}
+
+.heading {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--primary);
+  margin-bottom: 1rem;
+}
+
+.location {
+  color: gray;
+}
+
+.dates {
+  margin-bottom: 0.5rem;
+}
+
+.projects {
+  padding-left: 1rem;
+}
+
+.projects li {
+  margin-bottom: 1rem;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .containerTitle {
+    background-color: var(--tundora) !important;
+  }
+}

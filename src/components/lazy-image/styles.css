@@ -1,0 +1,12 @@
+.placeholder {
+  background-color: var(--wildsand);
+  width: 100%;
+  max-width: 640px;
+  height: 250px;
+}
+
+@media (min-width: 1024px) {
+  .placeholder {
+    height: 350px;
+  }
+}

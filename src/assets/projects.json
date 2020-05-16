@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Helix",
+    "link": "https://fjlaubscher.github.io/helix",
+    "description": "Helix is an opinionated React boilerplate which tries to keep config to a minimum while allowing you to configure what you need. This site is built with Helix!",
+    "image": "/helix.jpg"
+  },
+  {
+    "title": "Reactro",
+    "link": "https://github.com/leadhomesa/reactro/",
+    "description": "Sprint retrospective app built with React + Firebase which was used on a weekly basis in my team at Leadhome.",
+    "image": "/reactro.jpg"
+  },
+  {
+    "title": "Valuation Wizard",
+    "link": "https://leadhome.co.za/valuation",
+    "description": "Online property valuation tool built at Leadhome using React + Redux.",
+    "image": "/valuation-wizard.jpg"
+  }
+]
