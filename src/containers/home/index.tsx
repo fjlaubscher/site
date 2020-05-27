@@ -1,25 +1,18 @@
 import React from 'react';
-import { useAsync } from 'react-use';
 
-// components
-import Hero from './hero';
-import Skills from './skills';
-import About from './about';
+// sub sections
+import Hero from './sections/hero';
+import Skills from './sections/skills';
+import About from './sections/about';
+import Work from './sections/work';
 
-const Home = () => {
-  const { loading, value } = useAsync(async () => {
-    const response = await fetch('/work.json');
-    const result = await response.json();
-    return result;
-  });
-
-  return (
-    <>
-      <Hero />
-      <Skills />
-      <About />
-    </>
-  );
-};
+const Home = () => (
+  <>
+    <Hero />
+    <Skills />
+    <About />
+    <Work />
+  </>
+);
 
 export default Home;

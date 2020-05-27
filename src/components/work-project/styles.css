@@ -3,15 +3,25 @@
   flex-direction: column;
 }
 
+.name {
+  font-weight: 600;
+}
+
 .description {
-  color: gray;
+  margin-bottom: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .badge {
-  display: inline-block;
   margin-right: 0.5rem;
-  background-color: var(--primary-dark);
+  margin-top: 0.5rem;
+  background-color: var(--persiangreen);
   color: white;
-  padding: 0 0.3rem;
-  margin-top: 0.3rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
 }

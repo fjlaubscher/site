@@ -2,9 +2,12 @@ import React from 'react';
 import classnames from 'classnames';
 import { FaHeart } from 'react-icons/fa';
 
-import Container from '../../components/container';
-import { ReactComponent as MeSvg } from '../../assets/me.svg';
-import styles from './styles.css';
+// components
+import Container from '../../../components/container';
+
+// assets
+import { ReactComponent as MeSvg } from '../../../assets/me.svg';
+import styles from '../styles.css';
 
 const Hero = () => (
   <Container className={classnames(styles.container, styles.hero)}>

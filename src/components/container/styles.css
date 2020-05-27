@@ -3,13 +3,17 @@
 }
 
 .background.alternate {
-  background-color: var(--wildsand);
+  background-color: var(--gallery);
 }
 
 .container {
   padding: 1rem;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.container h1, h2, h3 {
+  text-align: center;
 }
 
 @media (min-width: 1280px) {

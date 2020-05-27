@@ -1,41 +1,64 @@
 .container {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
   padding: 1rem;
-  margin-bottom: 2rem;
+  border-radius: 0.25rem;
 }
 
-.containerTitle {
-  background-color: var(--alabaster) !important;
-  margin-bottom: 0.5rem !important;
+.container h4, h5, h6 {
+  margin-top: 0;
+}
+
+.container h4 {
+  font-size: 1.3rem;
   font-weight: normal;
+  margin-bottom: 0.3rem;
+}
+
+.container h5 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--terracotta);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--terracotta);
+}
+
+.container .projectHeading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .heading {
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading span {
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: var(--mineshaft);
+}
+
+.container .projects {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container .projects li {
+  border-bottom: 2px solid var(--gallery);
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 
-.location {
-  color: gray;
-}
 
-.dates {
-  margin-bottom: 0.5rem;
-}
-
-.projects {
-  padding-left: 1rem;
-}
-
-.projects li {
-  margin-bottom: 1rem;
-}
-
-
-@media (prefers-color-scheme: dark) {
-  .containerTitle {
-    background-color: var(--tundora) !important;
-  }
+.container .projects li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }

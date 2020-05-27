@@ -1,6 +1,6 @@
 :root {
   --mineshaft: #282828;
-  --wildsand: #f5f5f5;
+  --gallery: #eeeeee;
 
   --charcoal: #264653;
   --persiangreen: #2a9d8f;
@@ -17,6 +17,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 svg {

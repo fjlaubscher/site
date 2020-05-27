@@ -1,10 +1,10 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import Container from '../../components/container';
-import styles from './styles.css';
+import Container from '../../../components/container';
+import styles from '../styles.css';
 
-const Hero = () => (
+const About = () => (
   <Container className={classnames(styles.container, styles.about)}>
     <h2>About</h2>
     <p>
@@ -23,4 +23,4 @@ const Hero = () => (
   </Container>
 );
 
-export default Hero;
+export default About;

@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 0;
 }
 
 .text h1 {
-  text-align: center;
   margin: 0;
 }
 
@@ -18,15 +18,6 @@
 .text h3 svg {
   fill: red;
   margin: 0 0.25rem;
-}
-
-.container {
-  margin-top: 1rem;
-}
-.tech h2, .about h2 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 .tech .grid {
@@ -50,3 +41,14 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+.about p:last-child {
+  margin: 0;
+}
+
+.container h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+

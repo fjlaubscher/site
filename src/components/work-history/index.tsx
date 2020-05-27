@@ -10,13 +10,17 @@ interface Props {
 
 const WorkHistory = ({ work }: Props) => (
   <div className={styles.container}>
-    <h3 className={styles.title}>{work.employer}</h3>
-    <h4 className={styles.heading}>{work.role}</h4>
-    <span className={styles.location}>{work.location}</span>
-    <span className={styles.dates}>
-      {work.from} - {work.to || 'present'}
-    </span>
-    <h4 className={styles.heading}>Projects</h4>
+    <h4 className={styles.heading}>
+      {work.employer}
+      <span>{work.location}</span>
+    </h4>
+    <h5 className={styles.heading}>
+      {work.role}
+      <span className={styles.dates}>
+        {work.from} - {work.to || 'present'}
+      </span>
+    </h5>
+    <span className={styles.projectHeading}>Key Projects</span>
     <ul className={styles.projects}>
       {work.projects.map((x) => (
         <li key={x.name}>

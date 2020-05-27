@@ -9,8 +9,8 @@ import {
   FaDocker,
 } from 'react-icons/fa';
 
-import Container from '../../components/container';
-import styles from './styles.css';
+import Container from '../../../components/container';
+import styles from '../styles.css';
 
 const Skills = () => (
   <Container alternate className={classnames(styles.container, styles.tech)}>
