@@ -13,7 +13,7 @@ import Container from '../../../components/container';
 import styles from '../styles.css';
 
 const Skills = () => (
-  <Container alternate className={classnames(styles.container, styles.tech)}>
+  <Container className={classnames(styles.container, styles.tech)}>
     <h2>Top Skills</h2>
     <div className={styles.grid}>
       <div className={styles.column}>

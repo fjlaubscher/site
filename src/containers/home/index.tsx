@@ -10,8 +10,8 @@ import Showcase from './sections/showcase';
 const Home = () => (
   <>
     <Hero />
-    <Skills />
     <About />
+    <Skills />
     <Showcase />
     <Work />
   </>

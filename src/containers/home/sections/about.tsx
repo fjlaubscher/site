@@ -23,7 +23,11 @@ export const Paragraphs = () => (
 );
 
 const About = () => (
-  <Container id="about" className={classnames(styles.container, styles.about)}>
+  <Container
+    id="about"
+    alternate
+    className={classnames(styles.container, styles.about)}
+  >
     <h2>About</h2>
     <Paragraphs />
   </Container>
