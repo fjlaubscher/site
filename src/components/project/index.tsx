@@ -29,7 +29,7 @@ const Project = ({ project }: Props) => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h3>{project.title}</h3>
+        {project.title}
       </a>
       <p>{project.description}</p>
     </div>

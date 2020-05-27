@@ -4,9 +4,8 @@ import classnames from 'classnames';
 import Container from '../../../components/container';
 import styles from '../styles.css';
 
-const About = () => (
-  <Container className={classnames(styles.container, styles.about)}>
-    <h2>About</h2>
+export const Paragraphs = () => (
+  <>
     <p>
       I&apos;m a freelance software engineer with 8+ years of experience in
       developing and maintaining robust web apps.
@@ -20,6 +19,13 @@ const About = () => (
       Working in these environments has enabled me to develop software which
       improves the productivity and efficiency of business processes.
     </p>
+  </>
+);
+
+const About = () => (
+  <Container id="about" className={classnames(styles.container, styles.about)}>
+    <h2>About</h2>
+    <Paragraphs />
   </Container>
 );
 

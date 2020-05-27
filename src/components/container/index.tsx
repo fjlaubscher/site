@@ -4,13 +4,17 @@ import classnames from 'classnames';
 import styles from './styles.css';
 
 interface Props {
+  id?: string;
   className?: string;
   alternate?: boolean;
   children: React.ReactNode;
 }
 
-const Container = ({ className, alternate, children }: Props) => (
-  <div className={classnames(styles.background, alternate && styles.alternate)}>
+const Container = ({ id, className, alternate, children }: Props) => (
+  <div
+    id={id}
+    className={classnames(styles.background, alternate && styles.alternate)}
+  >
     <div className={classnames(styles.container, className)}>{children}</div>
   </div>
 );

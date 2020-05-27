@@ -19,7 +19,7 @@ const Work = () => {
   });
 
   return (
-    <Container className={classnames(styles.container, styles.work)}>
+    <Container id="work" className={classnames(styles.container, styles.work)}>
       <h2>Work History</h2>
       {loading && <span>loading</span>}
       {!loading &&
