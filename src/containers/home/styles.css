@@ -9,6 +9,12 @@
   display: none;
 }
 
+.hero .me {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
 .text h1 {
   margin: 0;
 }
@@ -79,10 +85,6 @@
   .hero {
     flex-direction: row-reverse;
     justify-content: center;
-  }
-
-  .hero .me {
-    max-width: 360px;
   }
 
   .hero .text {
