@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 import { useClickAway } from 'react-use';
-import { FaTimes } from 'react-icons/fa';
+
+import { ReactComponent as CloseIcon } from './close.svg';
 
 // components
 import MenuItems from '../nav/menu-items';
@@ -24,7 +25,7 @@ const Sidebar = ({ visible, onCloseClick }: Props) => {
       className={classnames(styles.sidebar, visible && styles.visible)}
     >
       <button className={styles.close} onClick={onCloseClick}>
-        <FaTimes />
+        <CloseIcon />
       </button>
       <Link onClick={onCloseClick} to="/">
         Home

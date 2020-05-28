@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
 const postcssPresetEnv = require('postcss-preset-env');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const publicPath = process.env.PUBLIC_URL || '/';
 const buildPath = path.join(__dirname, '..', 'build');
@@ -21,7 +22,7 @@ module.exports = {
     chunkFilename: '[name].bundle.js',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.mjs', '.js', '.ts', '.tsx'],
   },
   module: {
     rules: [
@@ -82,5 +83,6 @@ module.exports = {
       template: './src/index.html',
       publicPath,
     }),
+    // new BundleAnalyzerPlugin()
   ],
 };

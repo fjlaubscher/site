@@ -1,5 +1,9 @@
 import React from 'react';
-import { FaEnvelopeSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+
+// icons
+import { ReactComponent as EmailIcon } from './email.svg';
+import { ReactComponent as GithubIcon } from './github.svg';
+import { ReactComponent as LinkedInIcon } from './linkedin.svg';
 
 import styles from './styles.css';
 
@@ -9,21 +13,21 @@ const Contact = () => (
       <h2>Get in touch</h2>
       <div className={styles.links}>
         <a href="mailto:francoislaubscher@hotmail.com">
-          <FaEnvelopeSquare />
+          <EmailIcon />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://github.com/fjlaubscher"
         >
-          <FaGithubSquare />
+          <GithubIcon />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/fjlaubscher/"
         >
-          <FaLinkedin />
+          <LinkedInIcon />
         </a>
       </div>
     </div>
