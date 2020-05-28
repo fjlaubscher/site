@@ -31,10 +31,3 @@ if (module.hot) {
 }
 
 renderApp(App);
-
-// service worker bit
-if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js');
-  });
-}

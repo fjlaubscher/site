@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useEffect } from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
 
 import Layout from '../components/layout';
+import Contact from '../components/contact';
 
 // containers
 const Home = lazy(() => import('./home'));
@@ -40,6 +41,7 @@ const App = () => {
           <Route component={NotFound} />
         </Switch>
       </Suspense>
+      <Contact />
     </Layout>
   );
 };

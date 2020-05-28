@@ -1,6 +1,5 @@
 require('dotenv').config();
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const WorkboxPlugin = require('workbox-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
@@ -78,16 +77,10 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new CopyWebpackPlugin([{ from: assetsPath, to: buildPath }]),
+    new CopyWebpackPlugin({ patterns: [{ from: assetsPath, to: buildPath }] }),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       publicPath,
     }),
-    isProduction &&
-      new WorkboxPlugin.GenerateSW({
-        swDest: 'sw.js',
-        clientsClaim: true,
-        skipWaiting: true,
-      }),
-  ].filter(x => x !== false),
+  ],
 };

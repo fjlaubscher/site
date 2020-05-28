@@ -9,11 +9,13 @@ import Project from '../../../components/project';
 import styles from '../styles.css';
 
 const Showcase = () => {
-  const { loading, value: data } = useAsync<ProjectType[]>(async () => {
-    const response = await fetch('/projects.json');
-    const result = await response.json();
-    return result;
-  });
+  const { loading, value: data } = useAsync<() => Promise<ProjectType[]>>(
+    async () => {
+      const response = await fetch('/projects.json');
+      const result = await response.json();
+      return result;
+    }
+  );
 
   return (
     <Container

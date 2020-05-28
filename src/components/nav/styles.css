@@ -4,6 +4,9 @@
   justify-content: space-between;
   font-size: 2rem;
   color: var(--mineshaft);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .menu .logo {
@@ -36,6 +39,10 @@
   margin-right: 1rem;
 }
 
+.desktopNav a:last-child {
+  margin-right: 0;
+}
+
 .burger {
   outline: 0;
   background-color: transparent;
@@ -49,7 +56,7 @@
 
 @media (min-width: 768px) {
   .menu {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .desktopNav {
@@ -59,5 +66,12 @@
 
   .burger {
     display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

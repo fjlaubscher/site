@@ -7,7 +7,7 @@ interface Props {
   id?: string;
   className?: string;
   alternate?: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const Container = ({ id, className, alternate, children }: Props) => (

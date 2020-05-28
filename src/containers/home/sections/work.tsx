@@ -12,14 +12,20 @@ const createKey = (item: string, item2: string) =>
   `${item.replace(/ /g, '-')}-${item2.replace(/ /g, '-')}`;
 
 const Work = () => {
-  const { loading, value: data } = useAsync<WorkHistoryType[]>(async () => {
-    const response = await fetch('/work.json');
-    const result = await response.json();
-    return result;
-  });
+  const { loading, value: data } = useAsync<() => Promise<WorkHistoryType[]>>(
+    async () => {
+      const response = await fetch('/work.json');
+      const result = await response.json();
+      return result;
+    }
+  );
 
   return (
-    <Container id="work" className={classnames(styles.container, styles.work)}>
+    <Container
+      id="work"
+      alternate
+      className={classnames(styles.container, styles.work)}
+    >
       <h2>Work History</h2>
       {loading && <span>loading</span>}
       {!loading &&

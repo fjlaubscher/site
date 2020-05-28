@@ -41,6 +41,10 @@
   margin-bottom: 0.5rem;
 }
 
+.container.about {
+  border-bottom: 0.25rem dashed var(--gallery);
+}
+
 .about p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -59,9 +63,13 @@
   .about {
     display: none;
   }
+  .about+div {
+    display: none;
+  }
 
   .container {
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .container h2 {
@@ -96,9 +104,5 @@
 
   .hero .about {
     display: block;
-  }
-
-  .showcase {
-    padding-bottom: 0;
   }
 }

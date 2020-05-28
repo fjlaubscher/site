@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .project:last-child {
-  border-bottom: 0;
   margin-bottom: 0;
 }
 
@@ -14,7 +13,7 @@
   width: 100%;
   max-width: 640px;
   margin-bottom: 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem;
 }
 
@@ -27,6 +26,7 @@
 .link {
   display: block;
   color: var(--terracotta);
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0;
   margin-bottom: 0.5rem;
@@ -66,5 +66,15 @@
   .project:nth-child(even) .imageLink {
     margin-left: 0;
     margin-right: 3rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .project {
+    margin-bottom: 6rem;
   }
 }
