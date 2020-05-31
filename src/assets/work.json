@@ -22,7 +22,7 @@
         "tech": [
           "React",
           "Styled Components",
-          "dotnet core",
+          ".NET Core",
           "GraphQL",
           "PostgreSQL"
         ]
@@ -58,10 +58,10 @@
         ]
       },
       {
-        "name": "Osmosis - Internal, custom built CRM",
-        "description": "Osmo GraphQL api built with dotnet core.",
+        "name": "Osmosis - Internal CRM",
+        "description": "GraphQL API built with .NET Core along with other microservices communicating via REST and RabbitMQ.",
         "tech": [
-          "dotnet core",
+          ".NET Core",
           "GraphQL",
           "PostgreSQL",
           "RabbitMQ"
@@ -144,7 +144,7 @@
     "projects": [
       {
         "name": "wetu.com",
-        "description": "Wetu website",
+        "description": "Wetu public facing website.",
         "tech": [
           "ASP.NET MVC",
           "SCSS"
@@ -160,7 +160,7 @@
         ]
       },
       {
-        "name": "Specials portal",
+        "name": "Specials Portal",
         "description": "Allow clients to create special offers linked to their accommodations listed with Wetu. Clients can search for specials created using the specials search portal",
         "tech": [
           "ASP.NET MVC",
@@ -171,7 +171,7 @@
         ]
       },
       {
-        "name": "Internal metrics dashboard",
+        "name": "Internal Metrics Dashboard",
         "description": "Dashboard built with D3.js to view internal metrics.",
         "tech": [
           "ASP.NET MVC",
