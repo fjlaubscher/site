@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 
 import Container from '../../../components/container';
-import styles from '../styles.css';
+import styles from '../styles.scss';
 
 export const Paragraphs = () => (
   <>

@@ -1,0 +1,16 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1;
+  transform: translateX(0);
+  transition: transform 0.2s ease-in-out;
+
+  &.sideBarVisible {
+    transform: translateX(-75vw);
+  }
+}

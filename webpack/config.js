@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 require('dotenv').config();
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -5,8 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
-const postcssPresetEnv = require('postcss-preset-env');
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const publicPath = process.env.PUBLIC_URL || '/';
 const buildPath = path.join(__dirname, '..', 'build');
@@ -22,19 +21,14 @@ module.exports = {
     chunkFilename: '[name].bundle.js',
   },
   resolve: {
-    extensions: ['.mjs', '.js', '.ts', '.tsx'],
+    extensions: ['.js', '.ts', '.tsx'],
   },
   module: {
     rules: [
       {
-        test: /\.ts(x?)$/,
+        test: /.(js|ts|tsx)$/,
         exclude: /node_modules/,
-        use: ['ts-loader'],
-      },
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        loader: 'source-map-loader',
+        use: ['babel-loader'],
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -45,14 +39,9 @@ module.exports = {
         use: ['@svgr/webpack', 'file-loader'],
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: !isProduction,
-            },
-          },
+          isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
           {
             loader: 'css-loader',
             options: {
@@ -65,8 +54,11 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               ident: 'postcss',
-              plugins: () => [autoprefixer(), postcssPresetEnv()],
+              plugins: () => [autoprefixer()],
             },
+          },
+          {
+            loader: 'sass-loader',
           },
         ],
       },
@@ -83,6 +75,5 @@ module.exports = {
       template: './src/index.html',
       publicPath,
     }),
-    // new BundleAnalyzerPlugin()
   ],
 };

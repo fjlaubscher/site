@@ -1,0 +1,48 @@
+@use "../../styles/breakpoints";
+@use "../../styles/colors";
+
+.container {
+  background-color: colors.$terracotta;
+}
+
+.content {
+  padding: 2rem 1rem;
+  max-width: breakpoints.$max-width;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+  }
+
+  @media (min-width: breakpoints.$tablet) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  a {
+    display: block;
+    font-size: 3rem;
+    color: white;
+    transform: scale(1);
+    transition: 0.2s ease-in-out transform;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

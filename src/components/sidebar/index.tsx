@@ -8,7 +8,7 @@ import { ReactComponent as CloseIcon } from './close.svg';
 // components
 import MenuItems from '../nav/menu-items';
 
-import styles from './styles.css';
+import styles from './styles.scss';
 
 interface Props {
   visible: boolean;

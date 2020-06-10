@@ -1,0 +1,79 @@
+@use "../../styles/breakpoints";
+@use "../../styles/colors";
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+    &:nth-child(even) {
+      flex-direction: row;
+
+      .imageLink {
+        margin-left: 0;
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 6rem;
+  }
+}
+
+.imageLink {
+  width: 100%;
+  max-width: 640px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+
+  @media (min-width: breakpoints.$desktop) {
+    margin-bottom: 0;
+    margin-left: 3rem;
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.link {
+  display: block;
+  color: colors.$terracotta;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+
+  @media (min-width: breakpoints.$desktop) {
+    font-size: 1.5rem;
+  }
+}
+
+.description {
+  max-width: 640px;
+  width: 100%;
+  padding-bottom: 1rem;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    padding-bottom: 0;
+  }
+}

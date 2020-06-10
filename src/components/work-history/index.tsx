@@ -2,7 +2,7 @@ import React from 'react';
 
 import WorkProject from '../work-project';
 
-import styles from './styles.css';
+import styles from './styles.scss';
 
 interface Props {
   work: WorkHistoryType;

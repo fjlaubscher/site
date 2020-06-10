@@ -1,0 +1,15 @@
+@use "../../styles/breakpoints";
+@use "../../styles/colors";
+
+.placeholder {
+  background-color: darken(colors.$gallery, 10%);
+  width: 100%;
+  max-width: 640px;
+  height: 250px;
+}
+
+@media (min-width: breakpoints.$desktop) {
+  .placeholder {
+    height: 350px;
+  }
+}

@@ -10,7 +10,7 @@ import { ReactComponent as DockerIcon } from './docker.svg';
 import { ReactComponent as MicrosoftIcon } from './ms.svg';
 
 import Container from '../../../../components/container';
-import styles from '../../styles.css';
+import styles from '../../styles.scss';
 
 const Skills = () => (
   <Container alternate className={classnames(styles.container, styles.tech)}>

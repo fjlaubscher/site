@@ -8,7 +8,7 @@ import { Paragraphs } from '../about';
 import { ReactComponent as HeartIcon } from './heart.svg';
 import { ReactComponent as MeSvg } from './me.svg';
 
-import styles from '../../styles.css';
+import styles from '../../styles.scss';
 
 const Hero = () => (
   <Container className={styles.hero}>

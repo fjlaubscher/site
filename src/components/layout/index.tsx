@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import Sidebar from '../sidebar';
 import Nav from '../nav';
 
-import styles from './styles.css';
+import styles from './styles.scss';
 
 interface Props {
   children: React.ReactNode;

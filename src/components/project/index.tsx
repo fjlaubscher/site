@@ -2,7 +2,7 @@ import React from 'react';
 
 import LazyImage from '../lazy-image';
 
-import styles from './styles.css';
+import styles from './styles.scss';
 
 interface Props {
   project: ProjectType;

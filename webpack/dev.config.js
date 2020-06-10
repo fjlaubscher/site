@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 require('dotenv').config();
 const config = require('./config');
 
@@ -10,17 +11,10 @@ module.exports = Object.assign(
       stats: 'minimal',
       hot: true,
       port,
-      proxy: {
-        '/api': {
-          target: process.env.API_URL,
-          secure: false,
-          changeOrigin: true
-        }
-      },
       writeToDisk: true,
       overlay: true,
-      historyApiFallback: true
-    }
+      historyApiFallback: true,
+    },
   },
   config
 );

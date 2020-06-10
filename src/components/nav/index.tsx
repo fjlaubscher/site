@@ -6,7 +6,7 @@ import { ReactComponent as BurgerIcon } from './burger.svg';
 import { ReactComponent as TerminalIcon } from './terminal.svg';
 
 import MenuItems from './menu-items';
-import styles from './styles.css';
+import styles from './styles.scss';
 
 interface Props {
   onMenuClick: () => void;

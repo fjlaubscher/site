@@ -5,7 +5,7 @@ import { ReactComponent as EmailIcon } from './email.svg';
 import { ReactComponent as GithubIcon } from './github.svg';
 import { ReactComponent as LinkedInIcon } from './linkedin.svg';
 
-import styles from './styles.css';
+import styles from './styles.scss';
 
 const Contact = () => (
   <div id="contact" className={styles.container}>

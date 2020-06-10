@@ -1,0 +1,76 @@
+@use "../../styles/breakpoints";
+@use "../../styles/colors";
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: colors.$mineshaft;
+  max-width: breakpoints.$max-width;
+  margin: 0 auto;
+  padding: 1rem;
+
+  .logo {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .link {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s ease-in-out;
+
+    &:hover {
+      border-bottom: 2px solid colors.$terracotta;
+    }
+
+    &.active {
+      color: colors.$terracotta;
+    }
+  }
+
+  @media (min-width: breakpoints.$tablet) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.desktopNav {
+  display: none;
+
+  a {
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: breakpoints.$tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.burger {
+  outline: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+
+  @media (min-width: breakpoints.$tablet) {
+    display: none;
+  }
+}

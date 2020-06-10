@@ -1,3 +1,5 @@
+@use "../../styles/colors";
+
 .project {
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@
 .badge {
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-  background-color: var(--persiangreen);
+  background-color: colors.$persiangreen;
   color: white;
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;

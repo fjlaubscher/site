@@ -6,7 +6,7 @@ import { useAsync } from 'react-use';
 import Container from '../../../components/container';
 import WorkHistory from '../../../components/work-history';
 
-import styles from '../styles.css';
+import styles from '../styles.scss';
 
 const createKey = (item: string, item2: string) =>
   `${item.replace(/ /g, '-')}-${item2.replace(/ /g, '-')}`;

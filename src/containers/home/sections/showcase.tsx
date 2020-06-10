@@ -6,7 +6,7 @@ import { useAsync } from 'react-use';
 import Container from '../../../components/container';
 import Project from '../../../components/project';
 
-import styles from '../styles.css';
+import styles from '../styles.scss';
 
 const Showcase = () => {
   const { loading, value: data } = useAsync<() => Promise<ProjectType[]>>(
