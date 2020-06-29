@@ -23,6 +23,8 @@ jobs:
         node-version: 12
     - run: sudo apt-get install rsync
     - run: npm install
+    - run: npm run lint
+    - run: npm run typecheck
     - run: npm run build
     - name: rsync-deploy
       uses: Pendect/action-rsyncer@v1.1.0
