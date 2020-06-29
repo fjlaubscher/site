@@ -1,5 +1,43 @@
 [
   {
+    "from": "June 2020",
+    "employer": "Incon Health",
+    "location": "Remote",
+    "role": "Freelance Software Engineer",
+    "projects": [
+      {
+        "name": "Screening PWA",
+        "description": "PWA for the occupational health industry which is used by employees to self-screen for COVID-19 on a daily basis.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "SCSS",
+          ".NET Core",
+          "MS SQL Server"
+        ]
+      }
+    ]
+  },
+  {
+    "from": "June 2020",
+    "employer": "keepr",
+    "location": "Remote",
+    "role": "Owner / Maintainer",
+    "projects": [
+      {
+        "name": "keepr",
+        "description": "Open source time keeping and invoicing. Development of the .NET Core REST API as well as the React (TypeScript) PWA.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "SCSS",
+          ".NET Core",
+          "MS SQL Server"
+        ]
+      }
+    ]
+  },
+  {
     "from": "Sept 2018",
     "to": "June 2020",
     "employer": "Leadhome",
@@ -136,7 +174,7 @@
     ]
   },
   {
-    "from": "Jun 2015",
+    "from": "June 2015",
     "to": "Aug 2016",
     "employer": "Wetu",
     "location": "Cape Town",
@@ -165,7 +203,7 @@
         "tech": [
           "ASP.NET MVC",
           "JavaScript",
-          "MSSQL SERVER",
+          "MS SQL Server",
           "RavenDB",
           "SCSS"
         ]
@@ -176,7 +214,7 @@
         "tech": [
           "ASP.NET MVC",
           "JavaScript",
-          "MSSQL SERVER",
+          "MS SQL Server",
           "RavenDB",
           "SCSS"
         ]
@@ -184,7 +222,7 @@
     ]
   },
   {
-    "from": "Mar 2013",
+    "from": "March 2013",
     "to": "May 2015",
     "employer": "Intervate",
     "location": "Cape Town and Remote",

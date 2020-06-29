@@ -13,8 +13,8 @@ module.exports = Object.assign(
       port,
       writeToDisk: true,
       overlay: true,
-      historyApiFallback: true,
-    },
+      historyApiFallback: true
+    }
   },
   config
 );

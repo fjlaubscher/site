@@ -15,7 +15,7 @@ const LazyImage = ({ src, alt, ...rest }: Props) => {
     const image = new Image();
     image.onload = () => setLoaded(true);
     image.src = src;
-  }, []);
+  }, [src]);
 
   return (
     (loaded && <img src={src} alt={alt} {...rest} />) || (
