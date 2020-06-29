@@ -15,8 +15,7 @@ const Work = () => {
   const { loading, value: data } = useAsync<() => Promise<WorkHistoryType[]>>(
     async () => {
       const response = await fetch('/work.json');
-      const result = await response.json();
-      return result;
+      return await response.json();
     }
   );
 

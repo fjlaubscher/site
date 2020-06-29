@@ -6,6 +6,7 @@ import Skills from './sections/skills';
 import About from './sections/about';
 import Work from './sections/work';
 import Showcase from './sections/showcase';
+import Contact from './sections/contact';
 
 const Home = () => (
   <>
@@ -14,6 +15,7 @@ const Home = () => (
     <About />
     <Showcase />
     <Work />
+    <Contact />
   </>
 );
 

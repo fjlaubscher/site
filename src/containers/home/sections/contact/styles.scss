@@ -1,14 +1,12 @@
-@use "../../styles/breakpoints";
-@use "../../styles/colors";
+@use "../../../../styles/breakpoints";
+@use "../../../../styles/colors";
 
-.container {
+.contact {
   background-color: colors.$terracotta;
-}
-
-.content {
   padding: 2rem 1rem;
-  max-width: breakpoints.$max-width;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h2 {
     text-align: center;
@@ -30,6 +28,8 @@
 }
 
 .links {
+  width: 100%;
+  max-width: breakpoints.$mobile;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -37,13 +37,18 @@
   a {
     display: block;
     color: white;
-    transform: scale(1);
-    transition: 0.2s ease-in-out transform;
+    transform: translateY(0);
+    transition: 0.1s ease-in-out transform;
     height: 3rem;
     width: 3rem;
 
+    svg {
+      height: 3rem;
+      width: 3rem;
+    }
+
     &:hover {
-      transform: scale(1.1);
+      transform: translateY(-2px);
     }
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { render, hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 // global styles
@@ -20,7 +20,9 @@ const renderApp = (TheApp: React.FC) => {
 
   const rootElement = document.getElementById('root');
   if (rootElement) {
-    return render(HelixApp, rootElement);
+    return rootElement.hasChildNodes()
+      ? hydrate(HelixApp, rootElement)
+      : render(HelixApp, rootElement);
   }
 
   console.error('Unable to render React app. Could not find #root');

@@ -5,6 +5,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PrerenderSPAPlugin = require('prerender-spa-plugin');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
 
@@ -50,21 +51,23 @@ module.exports = {
         use: ['@svgr/webpack', 'file-loader']
       },
       {
-        test: /\.scss$/,
-        exclude: /node_modules/,
+        test: /\.scss$/i,
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 1,
               modules: {
-                localIdentName: '[name]__[local]--[hash:base64:5]'
-              }
+                localIdentName: '[name]__[local]--[hash]'
+              },
+              sourceMap: !isProduction
             }
           },
           {
-            loader: 'sass-loader'
+            loader: 'sass-loader',
+            options: {
+              sourceMap: !isProduction
+            }
           }
         ]
       }
@@ -81,6 +84,11 @@ module.exports = {
       template: './src/index.html',
       publicPath
     }),
-    !isProduction && new ReactRefreshWebpackPlugin()
-  ].filter(Boolean)
+    isProduction
+      ? new PrerenderSPAPlugin({
+          staticDir: buildPath,
+          routes: ['/']
+        })
+      : new ReactRefreshWebpackPlugin()
+  ]
 };

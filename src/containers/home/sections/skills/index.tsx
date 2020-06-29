@@ -1,13 +1,13 @@
 import React from 'react';
 import classnames from 'classnames';
-
-// icons
-import { ReactComponent as ReactIcon } from './react.svg';
-import { ReactComponent as CssIcon } from './css.svg';
-import { ReactComponent as JsIcon } from './js.svg';
-import { ReactComponent as NodeIcon } from './node.svg';
-import { ReactComponent as DockerIcon } from './docker.svg';
-import { ReactComponent as MicrosoftIcon } from './ms.svg';
+import {
+  FaReact,
+  FaCss3Alt,
+  FaJsSquare,
+  FaNodeJs,
+  FaDocker,
+  FaMicrosoft
+} from 'react-icons/fa';
 
 import Container from '../../../../components/container';
 import styles from '../../styles.scss';
@@ -17,27 +17,27 @@ const Skills = () => (
     <h2>Top Skills</h2>
     <div className={styles.grid}>
       <div className={styles.column}>
-        <ReactIcon />
+        <FaReact />
         <span>React</span>
       </div>
       <div className={styles.column}>
-        <JsIcon />
+        <FaJsSquare />
         <span>JavaScript</span>
       </div>
       <div className={styles.column}>
-        <CssIcon />
+        <FaCss3Alt />
         <span>CSS</span>
       </div>
       <div className={styles.column}>
-        <NodeIcon />
+        <FaNodeJs />
         <span>NodeJS</span>
       </div>
       <div className={styles.column}>
-        <MicrosoftIcon />
+        <FaDocker />
         <span>.NET Core</span>
       </div>
       <div className={styles.column}>
-        <DockerIcon />
+        <FaMicrosoft />
         <span>Docker</span>
       </div>
     </div>
