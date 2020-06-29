@@ -34,7 +34,7 @@ jobs:
     - run: npm install
     - run: npm run build
     - run: npx react-snap
-    - name: rsync
+    - name: rsync-deploy
       uses: Pendect/action-rsyncer@v1.1.0
       env:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
