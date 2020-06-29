@@ -22,9 +22,9 @@ jobs:
     - run: npm run lint
     - run: npm run typecheck
   deploy:
+    runs-on: ubuntu-latest
     env:
       NODE_ENV: production
-    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
