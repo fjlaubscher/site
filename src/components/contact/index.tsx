@@ -1,9 +1,9 @@
 import React from 'react';
 
 // icons
-import { ReactComponent as EmailIcon } from './email.svg';
-import { ReactComponent as GithubIcon } from './github.svg';
-import { ReactComponent as LinkedInIcon } from './linkedin.svg';
+import EmailIcon from './email.svg';
+import GitHubIcon from './github.svg';
+import LinkedInIcon from './linkedin.svg';
 
 import styles from './styles.scss';
 
@@ -13,21 +13,21 @@ const Contact = () => (
       <h2>Get in touch</h2>
       <div className={styles.links}>
         <a href="mailto:francoislaubscher@hotmail.com">
-          <EmailIcon />
+          <img src={EmailIcon} alt="email" />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://github.com/fjlaubscher"
         >
-          <GithubIcon />
+          <img src={GitHubIcon} alt="github" />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/fjlaubscher/"
         >
-          <LinkedInIcon />
+          <img src={LinkedInIcon} alt="linkedin" />
         </a>
       </div>
     </div>

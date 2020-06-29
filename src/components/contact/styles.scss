@@ -36,10 +36,14 @@
 
   a {
     display: block;
-    font-size: 3rem;
     color: white;
     transform: scale(1);
     transition: 0.2s ease-in-out transform;
+
+    img {
+      height: 3rem;
+      width: 3rem;
+    }
 
     &:hover {
       transform: scale(1.1);
