@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, hydrate } from 'react-dom';
+import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 // global styles
@@ -10,7 +10,6 @@ import App from './containers';
 
 const publicUrl = process.env.PUBLIC_URL || '/';
 const supportsHistory = 'pushState' in window.history;
-const rootElement = document.getElementById('root');
 
 const renderApp = (TheApp: React.FC) => {
   const HelixApp = (
@@ -19,9 +18,13 @@ const renderApp = (TheApp: React.FC) => {
     </BrowserRouter>
   );
 
-  return rootElement?.hasChildNodes()
-    ? hydrate(HelixApp, rootElement)
-    : render(HelixApp, rootElement);
+  const rootElement = document.getElementById('root');
+  if (rootElement) {
+    return render(HelixApp, rootElement);
+  }
+
+  console.error('Unable to render React app. Could not find #root');
+  return null;
 };
 
 if (module.hot) {
