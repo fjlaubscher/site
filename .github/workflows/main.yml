@@ -30,7 +30,7 @@ jobs:
       env:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
-        flags: '--delete'
+        flags: '-arv --delete'
         src: 'build/'
         dest: 'root@"${{secrets.SERVER_IP}}":/var/www/website'
 
