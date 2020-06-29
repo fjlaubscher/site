@@ -22,25 +22,24 @@ jobs:
     - run: npm run lint
     - run: npm run typecheck
   deploy:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        env:
-          NODE_ENV: production
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: sudo apt-get install rsync
-      - run: npm install
-      - run: npm run build
-      - run: npx react-snap
-      - name: rsync
-          uses: Pendect/action-rsyncer@v1.1.0
-          env:
-              DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
-          with:
-              flags: '-avc --delete'
-              src: 'build/'
-              dest: 'root@"${{secrets.SERVER_IP}}":/var/www/website'
+    env:
+      NODE_ENV: production
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - run: sudo apt-get install rsync
+    - run: npm install
+    - run: npm run build
+    - run: npx react-snap
+    - name: rsync
+      uses: Pendect/action-rsyncer@v1.1.0
+      env:
+        DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+      with:
+        flags: '-avc --delete'
+        src: 'build/'
+        dest: 'root@"${{secrets.SERVER_IP}}":/var/www/website'
 
