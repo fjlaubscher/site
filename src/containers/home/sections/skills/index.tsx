@@ -33,11 +33,11 @@ const Skills = () => (
         <span>NodeJS</span>
       </div>
       <div className={styles.column}>
-        <FaDocker />
+        <FaMicrosoft />
         <span>.NET Core</span>
       </div>
       <div className={styles.column}>
-        <FaMicrosoft />
+        <FaDocker />
         <span>Docker</span>
       </div>
     </div>
