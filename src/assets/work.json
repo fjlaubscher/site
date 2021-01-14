@@ -6,8 +6,8 @@
     "role": "Freelance Software Engineer",
     "projects": [
       {
-        "name": "Screening PWA",
-        "description": "PWA for the occupational health industry which is used by employees to self-screen for COVID-19 on a daily basis.",
+        "name": "COVIDCare",
+        "description": "Occupational health software which allows employers to manage COVID-19 cases in the workplace and submit the data to the Department of Health.\r\nThis goes hand-in-hand with the Screening PWA which is used by employees to feed the data into COVIDCare and flag potential COVID-19 cases.",
         "tech": [
           "React",
           "TypeScript",
@@ -15,18 +15,10 @@
           ".NET Core",
           "MS SQL Server"
         ]
-      }
-    ]
-  },
-  {
-    "from": "June 2020",
-    "employer": "keepr",
-    "location": "Remote",
-    "role": "Owner / Maintainer",
-    "projects": [
+      },
       {
-        "name": "keepr",
-        "description": "Open source time keeping and invoicing. Development of the .NET Core REST API as well as the React (TypeScript) PWA.",
+        "name": "Screening PWA",
+        "description": "PWA for the occupational health industry which is used by employees to self-screen for COVID-19 on a daily basis.",
         "tech": [
           "React",
           "TypeScript",
