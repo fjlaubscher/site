@@ -5,7 +5,6 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const PrerenderSPAPlugin = require('prerender-spa-plugin');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
 
@@ -84,11 +83,6 @@ module.exports = {
       template: './src/index.html',
       publicPath
     }),
-    isProduction
-      ? new PrerenderSPAPlugin({
-          staticDir: buildPath,
-          routes: ['/']
-        })
-      : new ReactRefreshWebpackPlugin()
-  ]
+    !isProduction && new ReactRefreshWebpackPlugin()
+  ].filter(Boolean)
 };
