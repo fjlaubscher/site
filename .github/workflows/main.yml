@@ -26,6 +26,7 @@ jobs:
     - run: npm run lint
     - run: npm run typecheck
     - run: npm run build
+    - run: npx react-snap
     - name: rsync-deploy
       uses: Pendect/action-rsyncer@v1.1.0
       env:
