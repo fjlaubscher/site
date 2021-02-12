@@ -3,6 +3,11 @@
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+
+  &.sideBarVisible {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 .content {
@@ -12,5 +17,6 @@
 
   &.sideBarVisible {
     transform: translateX(-75vw);
+    opacity: 0.5;
   }
 }

@@ -7,7 +7,7 @@ const Contact = () => (
   <div id="contact" className={styles.contact}>
     <h2>Get in touch</h2>
     <div className={styles.links}>
-      <a href="mailto:francoislaubscher@hotmail.com">
+      <a href="mailto:hi@francois.codes">
         <FaEnvelope />
       </a>
       <a target="_blank" rel="noreferrer" href="https://github.com/fjlaubscher">
