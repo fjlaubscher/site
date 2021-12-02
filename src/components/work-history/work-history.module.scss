@@ -26,17 +26,11 @@
 
   h5 {
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: normal;
     color: colors.$terracotta;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid colors.$terracotta;
-  }
-
-  .projectHeading {
-    font-size: 1.3rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
   }
 
   .heading {
@@ -48,6 +42,10 @@
       font-size: 0.85rem;
       font-weight: normal;
       color: colors.$mineshaft;
+
+      @media (prefers-color-scheme: dark) {
+        color: darken(white, 25%);
+      }
     }
   }
 
@@ -67,6 +65,10 @@
         padding-bottom: 0;
       }
     }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: lighten(colors.$mineshaft, 5%);
   }
 
   @media (min-width: breakpoints.$tablet) {

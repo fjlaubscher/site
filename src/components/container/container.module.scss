@@ -6,12 +6,20 @@
 
   &.alternate {
     background-color: colors.$gallery;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: lighten(colors.$mineshaft, 5%);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: colors.$mineshaft;
   }
 }
 
 .container {
   padding: 2rem 1rem;
-  max-width: breakpoints.$max-width;
+  max-width: breakpoints.$large-desktop;
   margin: 0 auto;
 
   h1, h2, h3 {

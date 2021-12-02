@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// icons
-import { ReactComponent as BurgerIcon } from './burger.svg';
-import { ReactComponent as TerminalIcon } from './terminal.svg';
+import { FaHamburger, FaTerminal } from 'react-icons/fa';
 
 import MenuItems from './menu-items';
-import styles from './styles.scss';
+import styles from './nav.module.scss';
 
 interface Props {
   onMenuClick: () => void;
@@ -15,10 +12,10 @@ interface Props {
 const Nav = ({ onMenuClick }: Props) => (
   <div className={styles.menu}>
     <Link className={styles.logo} to="/">
-      <TerminalIcon />
+      <FaTerminal />
     </Link>
     <button className={styles.burger} onClick={onMenuClick}>
-      <BurgerIcon />
+      <FaHamburger />
     </button>
     <div className={styles.desktopNav}>
       <MenuItems />

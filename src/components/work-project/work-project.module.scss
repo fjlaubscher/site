@@ -6,11 +6,16 @@
 }
 
 .name {
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
 }
 
 .description {
   margin-bottom: 0.5rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: darken(white, 25%);
+  }
 }
 
 .tags {

@@ -91,7 +91,6 @@
   }
 
   &.about {
-    border-bottom: 0.25rem dashed colors.$gallery;
 
     p {
       margin-top: 0;
@@ -108,6 +107,16 @@
       &+div {
         display: none;
       }
+    }
+  }
+
+  &.showcase {
+    border-top: 0.25rem dashed colors.$gallery;
+    border-bottom: 0.25rem dashed colors.$gallery;
+
+    @media (prefers-color-scheme: dark) {
+      border-top-color: lighten(colors.$mineshaft, 5%);
+      border-bottom-color: lighten(colors.$mineshaft, 5%);
     }
   }
 

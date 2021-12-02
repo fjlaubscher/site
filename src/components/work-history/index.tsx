@@ -2,7 +2,7 @@ import React from 'react';
 
 import WorkProject from '../work-project';
 
-import styles from './styles.scss';
+import styles from './work-history.module.scss';
 
 interface Props {
   work: WorkHistoryType;
@@ -20,7 +20,6 @@ const WorkHistory = ({ work }: Props) => (
         {work.from} - {work.to || 'present'}
       </span>
     </h5>
-    <span className={styles.projectHeading}>Key Projects</span>
     <ul className={styles.projects}>
       {work.projects.map((x) => (
         <li key={x.name}>

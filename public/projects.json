@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Performer Plus",
+    "link": "https://www.inconhealth.co.za/performer-plus-data-analytics/",
+    "description": "Occupational health software which helps employers manage workplace risks, injuries and diseases.",
+    "image": "/performer-plus.jpg"
+  },
+  {
+    "title": "Crusader",
+    "link": "https://github.com/fjlaubscher/crusader/",
+    "description": "Crusader is a free and open-source Warhammer 40,000 Crusade assistant. -- I made an app to track things in a table-top game which I play with friends. \uD83E\uDD13",
+    "image": "/crusader.jpg"
+  },
+  {
+    "title": "COVIDCare Screening PWA",
+    "link": "",
+    "description": "PWA for the occupational health industry which is used by employees to self-screen for COVID-19 on a daily basis.",
+    "image": "/covidcare-screening.jpg"
+  }
+]

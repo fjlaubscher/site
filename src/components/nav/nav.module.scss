@@ -7,7 +7,7 @@
   justify-content: space-between;
   font-size: 2rem;
   color: colors.$mineshaft;
-  max-width: breakpoints.$max-width;
+  max-width: breakpoints.$large-desktop;
   margin: 0 auto;
   padding: 1rem;
 
@@ -40,6 +40,10 @@
   @media (min-width: 1440px) {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
   }
 }
 

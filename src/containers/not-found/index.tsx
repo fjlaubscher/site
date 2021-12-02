@@ -3,7 +3,7 @@ import React from 'react';
 import Container from '../../components/container';
 import NotFoundUrl from './404.svg';
 
-import styles from './styles.scss';
+import styles from './not-found.module.scss';
 
 const NotFound = () => (
   <Container className={styles.container}>

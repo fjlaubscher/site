@@ -1,7 +1,10 @@
-@use "./colors";
+@use "./_colors";
 
 * {
   box-sizing: border-box;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -12,9 +15,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: colors.$mineshaft;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: colors.$mineshaft;
+    color: white;
+  }
 }
 
 svg {

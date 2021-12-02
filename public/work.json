@@ -6,18 +6,29 @@
     "role": "Freelance Software Engineer",
     "projects": [
       {
+        "name": "Performer Plus",
+        "description": "Occupational health software which helps employers manage workplace risks, injuries and diseases.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Chakra UI",
+          ".NET 6",
+          "MS SQL Server"
+        ]
+      },
+      {
         "name": "COVIDCare",
         "description": "Occupational health software which allows employers to manage COVID-19 cases in the workplace and submit the data to the Department of Health.\r\nThis goes hand-in-hand with the Screening PWA which is used by employees to feed the data into COVIDCare and flag potential COVID-19 cases.",
         "tech": [
           "React",
           "TypeScript",
-          "SCSS",
+          "Semantic UI",
           ".NET Core",
           "MS SQL Server"
         ]
       },
       {
-        "name": "Screening PWA",
+        "name": "COVIDCare Screening PWA",
         "description": "PWA for the occupational health industry which is used by employees to self-screen for COVID-19 on a daily basis.",
         "tech": [
           "React",

@@ -5,12 +5,12 @@ import {
   FaCss3Alt,
   FaJsSquare,
   FaNodeJs,
-  FaDocker,
+  FaDatabase,
   FaMicrosoft
 } from 'react-icons/fa';
 
 import Container from '../../../../components/container';
-import styles from '../../styles.scss';
+import styles from '../../home.module.scss';
 
 const Skills = () => (
   <Container alternate className={classnames(styles.container, styles.tech)}>
@@ -34,11 +34,11 @@ const Skills = () => (
       </div>
       <div className={styles.column}>
         <FaMicrosoft />
-        <span>.NET Core</span>
+        <span>.NET</span>
       </div>
       <div className={styles.column}>
-        <FaDocker />
-        <span>Docker</span>
+        <FaDatabase />
+        <span>SQL</span>
       </div>
     </div>
   </Container>

@@ -2,13 +2,12 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 import { useClickAway } from 'react-use';
-
-import { ReactComponent as CloseIcon } from './close.svg';
+import { MdClose } from 'react-icons/md';
 
 // components
 import MenuItems from '../nav/menu-items';
 
-import styles from './styles.scss';
+import styles from './sidebar.module.scss';
 
 interface Props {
   visible: boolean;
@@ -25,7 +24,7 @@ const Sidebar = ({ visible, onCloseClick }: Props) => {
       className={classnames(styles.sidebar, visible && styles.visible)}
     >
       <button className={styles.close} onClick={onCloseClick}>
-        <CloseIcon />
+        <MdClose />
       </button>
       <Link onClick={onCloseClick} to="/">
         Home

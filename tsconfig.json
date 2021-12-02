@@ -1,23 +1,31 @@
 {
   "compilerOptions": {
-    // Target latest version of ECMAScript.
-    "target": "esnext",
-    // Search under node_modules for non-relative imports.
-    "moduleResolution": "node",
-    // Process & infer types from .js files.
-    "allowJs": true,
-    // Don't emit; allow Babel to transform files.
-    "noEmit": true,
-    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    // Disallow features that require cross-file information for emit.
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
     "isolatedModules": true,
-    // Import non-ES modules as default imports.
-    "esModuleInterop": true,
-    "jsx": "react",
-    "module": "ESNext"
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
   "include": [
-    "src"
+    "src",
+    "types"
   ]
 }

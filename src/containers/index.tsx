@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useEffect } from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Layout from '../components/layout';
 
@@ -9,36 +9,25 @@ const Health = lazy(() => import('./health'));
 const NotFound = lazy(() => import('./not-found'));
 
 const App = () => {
-  const history = useHistory();
+  const location = useLocation();
 
   useEffect(() => {
-    const unlisten = history.listen(({ hash }) => {
-      if (hash) {
-        // Push onto callback queue so it runs after the DOM is updated,
-        // this is required when navigating from a different page so that
-        // the element is rendered on the page before trying to getElementById.
-        setTimeout(() => {
-          const id = hash.replace('#', '');
-          const element = document.getElementById(id);
-          if (element) element.scrollIntoView();
-        }, 0);
-      } else {
-        // always start at the top when visiting a new page
-        window.scrollTo(0, 0);
-      }
-    });
-
-    return () => unlisten();
-  }, [history]);
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace('#', ''));
+      if (element) element.scrollIntoView();
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
 
   return (
     <Layout>
       <Suspense fallback={<span>loading</span>}>
-        <Switch>
-          <Route from="/" component={Home} exact />
-          <Route from="/health" component={Health} exact />
-          <Route component={NotFound} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/health" element={<Health />} />
+          <Route element={<NotFound />} />
+        </Routes>
       </Suspense>
     </Layout>
   );

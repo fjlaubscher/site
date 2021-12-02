@@ -6,14 +6,13 @@ import { useAsync } from 'react-use';
 import Container from '../../../components/container';
 import Project from '../../../components/project';
 
-import styles from '../styles.scss';
+import styles from '../home.module.scss';
 
 const Showcase = () => {
   const { loading, value: data } = useAsync<() => Promise<ProjectType[]>>(
     async () => {
       const response = await fetch('/projects.json');
-      const result = await response.json();
-      return result;
+      return await response.json();
     }
   );
 
