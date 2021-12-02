@@ -1,13 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import {
-  FaReact,
-  FaCss3Alt,
-  FaJsSquare,
-  FaNodeJs,
-  FaDatabase,
-  FaMicrosoft
-} from 'react-icons/fa';
+import { FaReact, FaCss3Alt, FaJsSquare, FaNodeJs, FaDatabase, FaMicrosoft } from 'react-icons/fa';
 
 import Container from '../../../../components/container';
 import styles from '../../home.module.scss';

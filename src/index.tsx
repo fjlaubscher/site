@@ -1,12 +1,12 @@
-import React from "react";
-import { render, hydrate } from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { render, hydrate } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 // global styles
-import "./styles/global.scss";
+import './styles/global.scss';
 
 // app container
-import App from "./containers";
+import App from './containers';
 
 const Website = (
   <BrowserRouter>
@@ -14,7 +14,7 @@ const Website = (
   </BrowserRouter>
 );
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 if (rootElement) {
   if (rootElement.hasChildNodes()) {
     hydrate(Website, rootElement);

@@ -13,11 +13,7 @@ const Contact = () => (
       <a target="_blank" rel="noreferrer" href="https://github.com/fjlaubscher">
         <FaGithubSquare />
       </a>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://www.linkedin.com/in/fjlaubscher/"
-      >
+      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/fjlaubscher/">
         <FaLinkedin />
       </a>
     </div>

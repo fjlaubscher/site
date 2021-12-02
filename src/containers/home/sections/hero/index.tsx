@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMedia } from "react-use";
+import { useMedia } from 'react-use';
 import { FaHeart } from 'react-icons/fa';
 
 // components

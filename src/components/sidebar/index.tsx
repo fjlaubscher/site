@@ -19,10 +19,7 @@ const Sidebar = ({ visible, onCloseClick }: Props) => {
   useClickAway(ref, onCloseClick);
 
   return (
-    <nav
-      ref={ref}
-      className={classnames(styles.sidebar, visible && styles.visible)}
-    >
+    <nav ref={ref} className={classnames(styles.sidebar, visible && styles.visible)}>
       <button className={styles.close} onClick={onCloseClick}>
         <MdClose />
       </button>

@@ -11,10 +11,7 @@ interface Props {
 }
 
 const Container = ({ id, className, alternate, children }: Props) => (
-  <div
-    id={id}
-    className={classnames(styles.background, alternate && styles.alternate)}
-  >
+  <div id={id} className={classnames(styles.background, alternate && styles.alternate)}>
     <div className={classnames(styles.container, className)}>{children}</div>
   </div>
 );

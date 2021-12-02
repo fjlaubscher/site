@@ -18,9 +18,7 @@ const LazyImage = ({ src, alt, ...rest }: Props) => {
   }, [src]);
 
   return (
-    (loaded && <img src={src} alt={alt} {...rest} />) || (
-      <div className={styles.placeholder} />
-    )
+    (loaded && <img src={src} alt={alt} {...rest} />) || <div className={styles.placeholder} />
   );
 };
 
