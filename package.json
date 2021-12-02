@@ -9,7 +9,8 @@
     "clean": "rimraf build",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{ts,tsx}\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",

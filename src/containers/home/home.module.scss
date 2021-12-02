@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 0;
+  padding-bottom: 0 !important; // I know !important is bad but vite's production build is different to the dev build :)
 
   .about {
     display: none;
@@ -104,7 +104,7 @@
     @media (min-width: breakpoints.$tablet) {
       display: none;
 
-      &+div {
+      & + div {
         display: none;
       }
     }
@@ -117,6 +117,10 @@
     @media (prefers-color-scheme: dark) {
       border-top-color: lighten(colors.$mineshaft, 5%);
       border-bottom-color: lighten(colors.$mineshaft, 5%);
+    }
+
+    @media (min-width: breakpoints.$tablet) {
+      border-top: 0;
     }
   }
 
