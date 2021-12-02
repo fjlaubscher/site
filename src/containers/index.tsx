@@ -4,8 +4,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Layout from '../components/layout';
 
 // containers
-import Home from './home';
-const Health = lazy(() => import('./health'));
+const Home = lazy(() => import('./home'));
 const NotFound = lazy(() => import('./not-found'));
 
 const App = () => {
@@ -25,7 +24,6 @@ const App = () => {
       <Suspense fallback={<span>loading</span>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/health" element={<Health />} />
           <Route element={<NotFound />} />
         </Routes>
       </Suspense>

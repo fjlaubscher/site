@@ -13,8 +13,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      VERSION: 2.0.0
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
