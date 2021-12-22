@@ -1,7 +1,7 @@
 {
-  "name": "helix",
-  "version": "1.1.2",
-  "description": "PWA react boilerplate",
+  "name": "francoislaubscher.dev",
+  "version": "2.0.0",
+  "description": "Francois Laubscher resume website",
   "main": "src/index.tsx",
   "scripts": {
     "start": "vite",

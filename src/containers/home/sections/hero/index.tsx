@@ -2,14 +2,14 @@ import React from 'react';
 import { useMedia } from 'react-use';
 import { FaHeart } from 'react-icons/fa';
 
-// components
-import Container from '../../../../components/container';
-
-import { Paragraphs } from '../about';
 // assets
-
 import LightAvatarUrl from './me-light.svg';
 import DarkAvatarUrl from './me-dark.svg';
+
+// components
+import Container from '../../../../components/container';
+import { Paragraphs } from '../about';
+
 import styles from '../../home.module.scss';
 
 const Hero = () => {
