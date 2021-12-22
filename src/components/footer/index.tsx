@@ -6,8 +6,6 @@ import classnames from 'classnames';
 import ContactForm from './form';
 import Message from '../message';
 
-import WaveUrl from './wave.svg';
-
 import styles from './footer.module.scss';
 
 const Footer = () => {
@@ -16,7 +14,7 @@ const Footer = () => {
 
   return (
     <>
-      <img className={styles.wave} src={WaveUrl} alt="wave" />
+      <img className={styles.wave} src="/wave.svg" alt="wave" />
       <div id="get-in-touch" className={styles.footer}>
         <h2>Get in touch</h2>
         {hasSubmitted ? (
