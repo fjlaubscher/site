@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       <img className={styles.wave} src={WaveUrl} alt="wave" />
-      <div id="get-in-touch" className={styles.section}>
+      <div id="get-in-touch" className={styles.footer}>
         <h2>Get in touch</h2>
         {hasSubmitted ? (
           <Message isError={!emailSent}>
