@@ -5,7 +5,7 @@ import WorkProject from '../work-project';
 import styles from './work-history.module.scss';
 
 interface Props {
-  work: WorkHistoryType;
+  work: Site.WorkHistory;
 }
 
 const WorkHistory = ({ work }: Props) => (

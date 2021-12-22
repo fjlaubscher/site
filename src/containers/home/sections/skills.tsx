@@ -2,8 +2,8 @@ import React from 'react';
 import classnames from 'classnames';
 import { FaReact, FaCss3Alt, FaJsSquare, FaNodeJs, FaDatabase, FaMicrosoft } from 'react-icons/fa';
 
-import Container from '../../../../components/container';
-import styles from '../../home.module.scss';
+import Container from '../../../components/container';
+import styles from '../home.module.scss';
 
 const Skills = () => (
   <Container alternate className={classnames(styles.container, styles.tech)}>

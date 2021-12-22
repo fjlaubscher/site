@@ -45,14 +45,16 @@
 }
 
 .image {
-  display: block;
-  width: 100%;
-  border-radius: 0.25rem;
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 0.25rem;
+  }
 }
 
 .link {
   display: block;
-  color: colors.$terracotta;
+  color: colors.$primary;
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0 0 0.5rem;

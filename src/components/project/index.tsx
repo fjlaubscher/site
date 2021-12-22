@@ -1,11 +1,9 @@
 import React from 'react';
 
-import LazyImage from '../lazy-image';
-
 import styles from './project.module.scss';
 
 interface Props {
-  project: ProjectType;
+  project: Site.ShowcaseProject;
 }
 
 const Project = ({ project }: Props) => (
@@ -16,7 +14,11 @@ const Project = ({ project }: Props) => (
       target={project.link ? '_blank' : undefined}
       rel={project.link ? 'noopener noreferrer' : undefined}
     >
-      <LazyImage className={styles.image} src={project.image} alt={project.title} />
+      <picture className={styles.image}>
+        <source srcSet={project.image.webp} type="image/webp" />
+        <source srcSet={project.image.jpg} type="image/jpeg" />
+        <img src={project.image.jpg} alt={project.title} />
+      </picture>
     </a>
     <div className={styles.description}>
       <a href={project.link} className={styles.link} target="_blank" rel="noopener noreferrer">

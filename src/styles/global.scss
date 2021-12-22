@@ -5,6 +5,7 @@
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -14,7 +15,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
   color: colors.$mineshaft;
 
   @media (prefers-color-scheme: dark) {
@@ -24,6 +24,7 @@ body {
 }
 
 svg {
+  display: block;
   fill: currentColor;
 }
 

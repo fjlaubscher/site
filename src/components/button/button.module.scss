@@ -1,0 +1,35 @@
+@use "../../styles/colors";
+
+.button {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  font-size: 1rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: 0.1s ease-in-out transform, 0.2s ease-in-out background-color, 0.2s ease-in-out border-color;
+  background-color: colors.$secondary;
+  border-bottom: 0.25rem solid darken(colors.$secondary, 5%);
+
+  &:active, &:hover {
+    transform: translateY(-0.25rem);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: colors.$dusty-gray;
+    border-bottom-color: darken(colors.$dusty-gray, 5%);
+  }
+
+  img {
+    height: 1rem;
+  }
+}

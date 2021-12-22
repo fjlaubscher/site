@@ -1,0 +1,50 @@
+@use "../../styles/colors";
+
+.field {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  .label {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .error {
+    display: block;
+    color: colors.$torch-red;
+  }
+
+  .input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    outline: 0;
+    display: block;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 2px solid colors.$gallery;
+    background-color: white;
+    color: colors.$mineshaft;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin: 4px 0;
+    transition: 0.2s ease-in-out border-color;
+
+    &:focus {
+      border-color: colors.$secondary;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  textarea {
+    min-height: 10rem;
+    resize: vertical;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../../styles/colors";
+
+.message {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: colors.$secondary;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.error {
+  background-color: lighten(colors.$torch-red, 40%);
+  color: colors.$torch-red;
+}

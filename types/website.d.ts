@@ -1,21 +1,34 @@
-interface ProjectType {
-  title: string;
-  link: string;
-  description: string;
-  image: string;
-}
+declare namespace Site {
+  interface Image {
+    jpg: string;
+    webp: string;
+  }
 
-interface WorkProjectType {
-  name: string;
-  description: string;
-  tech: string[];
-}
+  interface ShowcaseProject {
+    title: string;
+    link: string;
+    description: string;
+    image: Image;
+  }
 
-interface WorkHistoryType {
-  from: string;
-  to?: string;
-  employer: string;
-  location: string;
-  role: string;
-  projects: WorkProjectType[];
+  interface WorkProject {
+    name: string;
+    description: string;
+    tech: string[];
+  }
+
+  interface WorkHistory {
+    from: string;
+    to?: string;
+    employer: string;
+    location: string;
+    role: string;
+    projects: WorkProject[];
+  }
+
+  interface ContactForm {
+    name: string;
+    email: string;
+    query: string;
+  }
 }

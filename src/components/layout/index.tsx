@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classnames from 'classnames';
 
 // components
+import Footer from '../footer';
 import Sidebar from '../sidebar';
 import Nav from '../nav';
 
@@ -18,6 +19,7 @@ const Layout = ({ children }: Props) => {
       <div className={classnames(styles.content, showSidebar && styles.sideBarVisible)}>
         <Nav onMenuClick={() => setShowSidebar(!showSidebar)} />
         {children}
+        <Footer />
       </div>
       <Sidebar visible={showSidebar} onCloseClick={() => setShowSidebar(false)} />
     </div>

@@ -25,11 +25,11 @@
     transition: border 0.2s ease-in-out;
 
     &:hover {
-      border-bottom: 2px solid colors.$terracotta;
+      border-bottom: 2px solid colors.$primary;
     }
 
     &.active {
-      color: colors.$terracotta;
+      color: colors.$primary;
     }
   }
 

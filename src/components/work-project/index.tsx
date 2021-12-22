@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import styles from './work-project.module.scss';
 
 interface Props {
-  project: WorkProjectType;
+  project: Site.WorkProject;
 }
 
 const WorkProject = ({ project }: Props) => (

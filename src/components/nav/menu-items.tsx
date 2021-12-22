@@ -15,8 +15,8 @@ const MenuItems = ({ onMenuItemClick }: Props) => (
     <Link onClick={onMenuItemClick} className={styles.link} to="#work">
       Work
     </Link>
-    <Link onClick={onMenuItemClick} className={styles.link} to="#contact">
-      Contact
+    <Link onClick={onMenuItemClick} className={styles.link} to="#get-in-touch">
+      Get in touch
     </Link>
   </>
 );
