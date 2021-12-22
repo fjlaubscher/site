@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, hydrate } from 'react-dom';
+import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 // global styles
@@ -9,16 +9,14 @@ import './styles/global.scss';
 import App from './containers';
 
 const Website = (
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
 const rootElement = document.getElementById('root');
 if (rootElement) {
-  if (rootElement.hasChildNodes()) {
-    hydrate(Website, rootElement);
-  } else {
-    render(Website, rootElement);
-  }
+  render(Website, rootElement);
 }
