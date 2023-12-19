@@ -7,7 +7,7 @@ import styles from '../home.module.scss';
 export const Paragraphs = () => (
   <>
     <p>
-      I&apos;m a Senior Front-End Engineer at Toptal with 9+ years of experience in developing and
+      I&apos;m a Senior Front-End Engineer at Toptal with 10+ years of experience in developing and
       maintaining robust web apps.
     </p>
     <p>

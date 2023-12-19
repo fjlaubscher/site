@@ -1,6 +1,37 @@
 [
   {
+    "from": "March 2022",
+    "employer": "Toptal",
+    "location": "Remote",
+    "role": "Senior Front-End Engineer",
+    "projects": [
+      {
+        "name": "Client Portal",
+        "description": "Client-facing software which is used to create Jobs, review Talent matched with specific Jobs and scheduling interviews. My team's domain was primarily focused on the wizard which was used to create a Job and displaying a Talent's profile when they have been sent to a Job to schedule an interview.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "SASS",
+          "Jest",
+          "Cypress"
+        ]
+      },
+      {
+        "name": "Staff Portal",
+        "description": "Internal software which allows the managing of Clients, Talent and Staff within Toptal. My team's domain was primarily focused on \"Matching\" which involved the process of matching Talent with Clients, as well as the process of sending Talent to Jobs.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Material UI",
+          "Jest",
+          "Cypress"
+        ]
+      }
+    ]
+  },
+  {
     "from": "June 2020",
+    "to": "March 2022",
     "employer": "Incon Health",
     "location": "Remote",
     "role": "Freelance Software Engineer",

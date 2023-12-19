@@ -9,12 +9,12 @@
     }
   },
   {
-    "title": "Crusader",
-    "link": "https://github.com/fjlaubscher/crusader/",
-    "description": "Crusader is a free and open-source Warhammer 40,000 Crusade assistant. -- I made an app to track things in a table-top game which I play with friends. \uD83E\uDD13",
+    "title": "Barracks",
+    "link": "https://barracks.francoislaubscher.dev",
+    "description": "Barracks is an open-source app built entirely on web technologies, providing an intuitive and convenient platform for two essential aspects of the table-top game Bolt Action: rules references and army list building.",
     "image": {
-      "jpg": "/showcase/crusader.jpg",
-      "webp": "/showcase/crusader.webp"
+      "jpg": "/showcase/barracks.jpg",
+      "webp": "/showcase/barracks.webp"
     }
   },
   {
