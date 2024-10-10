@@ -1,30 +1,69 @@
 [
   {
     "from": "March 2022",
+    "to": "October 2024",
     "employer": "Toptal",
     "location": "Remote",
     "role": "Senior Front-End Engineer",
     "projects": [
       {
-        "name": "Client Portal",
-        "description": "Client-facing software which is used to create Jobs, review Talent matched with specific Jobs and scheduling interviews. My team's domain was primarily focused on the wizard which was used to create a Job and displaying a Talent's profile when they have been sent to a Job to schedule an interview.",
+        "name": "Client Portal: Talent Insights (Initiative Lead)",
+        "description": "Led the Talent Insights initiative, a year-long phased project focused on streamlining the interview process and enhancing data visibility. Coordinated team efforts and utilized Jira for task tracking and project management. Successfully rolled out new features using feature toggles, enabling a phased approach to project delivery.",
         "tech": [
           "React",
           "TypeScript",
           "SASS",
-          "Jest",
-          "Cypress"
+          "Jest (React Testing Library)",
+          "Cypress (Component Tests)",
+          "Storybook (Visual Tests and Documentation)"
         ]
       },
       {
-        "name": "Staff Portal",
-        "description": "Internal software which allows the managing of Clients, Talent and Staff within Toptal. My team's domain was primarily focused on \"Matching\" which involved the process of matching Talent with Clients, as well as the process of sending Talent to Jobs.",
+        "name": "Client Portal",
+        "description": "Contributed to the development of Client Portal, a platform used by Clients to create Jobs, review Talent, and schedule interviews. As part of the Matching team, I was responsible for developing and maintaining features related to creating Jobs and displaying Talent profiles. I collaborated with cross-functional teams to ensure seamless integration and functionality, and I also analyzed and troubleshot issues to improve the overall user experience.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "SASS",
+          "Jest (React Testing Library)",
+          "Cypress (Component Tests)",
+          "Storybook (Visual Tests and Documentation)"
+        ]
+      },
+      {
+        "name": "Staff Portal: Pricing Calculator (Initiative Lead)",
+        "description": "Led the Pricing Calculator initiative, a project focused on providing clients with accurate and detailed pricing information for specific talent. Successfully integrated the calculator into an internal tool, enhancing the efficiency of the hiring process and improving client satisfaction.",
         "tech": [
           "React",
           "TypeScript",
           "Material UI",
-          "Jest",
-          "Cypress"
+          "Jest (React Testing Library)",
+          "Cypress (Component Tests)",
+          "Storybook (Visual Tests and Documentation)"
+        ]
+      },
+      {
+        "name": "Staff Portal: Rates Calculator (Initiative Lead)",
+        "description": "Led the Rates Calculator initiative, a project focused on improving the accuracy and efficiency of pricing calculations within Staff Portal when sending potential candidates to clients for posted jobs. Successfully migrated client-side calculations to the backend, enabling real-time updates and ensuring accurate pricing based on dynamic rate changes.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Material UI",
+          "Jest (React Testing Library)",
+          "Cypress (Component Tests)",
+          "Storybook (Visual Tests and Documentation)"
+        ]
+      },
+      {
+        "name": "Staff Portal",
+        "description": "Contributed to the development of Staff Portal, an internal software platform used to manage Clients, Talent, and Staff within Toptal. As part of the Matching team, I was responsible for developing and maintaining features related to matching Talent with Clients and sending Talent to Jobs.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Material UI",
+          "Jest (React Testing Library)",
+          "Cypress (Component Tests)",
+          "Storybook (Visual Tests and Documentation)"
         ]
       }
     ]
@@ -38,7 +77,7 @@
     "projects": [
       {
         "name": "Performer Plus",
-        "description": "Occupational health software which helps employers manage workplace risks, injuries and diseases.",
+        "description": "Developed Performer Plus, a software platform designed to assist employers in managing workplace risks, injuries, and diseases. As the sole front-end developer, I was responsible for building the user interface from scratch. I also contributed to the back-end development and helped plan the overall architecture of the application.",
         "tech": [
           "React",
           "TypeScript",
@@ -49,7 +88,7 @@
       },
       {
         "name": "COVIDCare",
-        "description": "Occupational health software which allows employers to manage COVID-19 cases in the workplace and submit the data to the Department of Health.\r\nThis goes hand-in-hand with the Screening PWA which is used by employees to feed the data into COVIDCare and flag potential COVID-19 cases.",
+        "description": "Developed COVIDCare, a software platform designed to assist employers in managing COVID-19 cases within the workplace. As part of the development team, I was responsible for building the platform from the ground up, including features related to tracking COVID-19 cases, submitting data to the Department of Health, and integrating with the Screening PWA, a mobile application used by employees to report potential COVID-19 symptoms.",
         "tech": [
           "React",
           "TypeScript",
@@ -60,7 +99,7 @@
       },
       {
         "name": "COVIDCare Screening PWA",
-        "description": "PWA for the occupational health industry which is used by employees to self-screen for COVID-19 on a daily basis.",
+        "description": "Developed Screening PWA, a mobile application designed for the occupational health industry. As part of the development team, I was responsible for building the application from the ground up, enabling employees to self-screen for COVID-19 on a daily basis. The PWA integrated seamlessly with COVIDCare, a platform used by employers to manage COVID-19 cases within the workplace.",
         "tech": [
           "React",
           "TypeScript",
@@ -80,17 +119,17 @@
     "projects": [
       {
         "name": "Book a Viewing",
-        "description": "Online property viewing booking wizard.",
+        "description": "Developed the Viewing Booking Wizard at Leadhome, a tech startup in the South African real estate industry. As part of the development team, I was responsible for implementing the user interface from Figma designs and building features related to booking viewings for properties listed on the Leadhome platform. My contributions helped to streamline the viewing process for both agents and clients.",
         "tech": [
           "React",
           "Redux",
           "Styled Components",
-          "Cypress"
+          "Cypress (E2E)"
         ]
       },
       {
         "name": "leadhome.co.za - Estate Agents",
-        "description": "Micro UI functioning as a new section of the website to find Leadhome estate agents by province, metro and suburb with a massive focus on SEO to improve organic traffic. This project also included a back-end API which pulls data from our microservices and migrates estate agent data from Wordpress to our internal CRM.",
+        "description": "Developed the Estate Agents section of the Leadhome website, a new micro UI designed to enhance organic traffic through SEO optimization. The project involved creating a user-friendly interface for finding Leadhome estate agents by province, metro, and suburb, as well as developing a back-end API to integrate with our microservices and migrate estate agent data from WordPress to our internal CRM.",
         "tech": [
           "React",
           "Styled Components",
@@ -101,7 +140,7 @@
       },
       {
         "name": "leadhome.co.za",
-        "description": "Partial rebuild of the Leadhome website while keeping the older version of the website running and using nginx to proxy requests to either one of the apps while keeping the domain the same.",
+        "description": "Contributed to a partial rebuild of the Leadhome website, maintaining the older version while using Nginx to proxy requests to either application, ensuring a seamless user experience without changing the domain. This project involved updating key sections of the website to improve functionality and user experience.",
         "tech": [
           "React",
           "Styled Components",
@@ -111,18 +150,18 @@
       },
       {
         "name": "Book a Valuation",
-        "description": "Online property valuation booking wizard.",
+        "description": "Developed the \"Book a Valuation\" wizard for the Leadhome website, a tool that allows homeowners to easily schedule property valuations. The project involved designing and implementing a user-friendly interface, integrating with the Leadhome platform, and ensuring a seamless booking process.",
         "tech": [
           "React",
           "Redux",
           "Styled Components",
-          "Cypress"
+          "Cypress (E2E)"
         ]
       },
       {
         "name": "Carbon",
         "link": "https://github.com/leadhomesa/carbon",
-        "description": "Open source PWA boilerplate used for internal React front-ends.",
+        "description": "Proposed and led the development of Carbon, an open-source PWA boilerplate designed for internal React front-ends at Leadhome. As the project lead, I was responsible for defining the project's scope, architecture, and development process. I also contributed significantly to the development of the boilerplate, including its core features, documentation, and maintenance.",
         "tech": [
           "React",
           "Webpack",
@@ -131,7 +170,7 @@
       },
       {
         "name": "Osmosis - Internal CRM",
-        "description": "GraphQL API built with .NET Core along with other microservices communicating via REST and RabbitMQ.",
+        "description": "Developed Osmosis, an internal CRM built to replace Salesforce at Leadhome. As a back-end developer, I contributed significantly to the development of the GraphQL API using .NET Core. I also worked on other microservices that communicated via REST and RabbitMQ, playing a key role in the overall architecture and implementation of the CRM.",
         "tech": [
           ".NET Core",
           "GraphQL",

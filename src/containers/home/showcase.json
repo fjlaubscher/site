@@ -2,7 +2,7 @@
   {
     "title": "Performer Plus",
     "link": "https://www.inconhealth.co.za/performer-plus-data-analytics/",
-    "description": "Occupational health software which helps employers manage workplace risks, injuries and diseases.",
+    "description": "A software platform designed to assist employers in managing workplace risks, injuries, and diseases. As the sole front-end developer, I was responsible for building the user interface from scratch. I also contributed to the back-end development and helped plan the overall architecture of the application.",
     "image": {
       "jpg": "/showcase/performer-plus.jpg",
       "webp": "/showcase/performer-plus.webp"
@@ -11,19 +11,19 @@
   {
     "title": "Barracks",
     "link": "https://barracks.francoislaubscher.dev",
-    "description": "Barracks is an open-source app built entirely on web technologies, providing an intuitive and convenient platform for two essential aspects of the table-top game Bolt Action: rules references and army list building.",
+    "description": "A passion project I built from the ground up. This web-based app provides an intuitive and convenient platform for two essential aspects of the table-top game Bolt Action: rules references and army list building.",
     "image": {
       "jpg": "/showcase/barracks.jpg",
       "webp": "/showcase/barracks.webp"
     }
   },
   {
-    "title": "COVIDCare Screening PWA",
-    "link": "",
-    "description": "PWA for the occupational health industry which is used by employees to self-screen for COVID-19 on a daily basis.",
+    "title": "Matter",
+    "link": "https://matter.francoislaubscher.dev",
+    "description": "A personal collection of reusable React components that I've developed to streamline my own development process when working on passion projects.",
     "image": {
-      "jpg": "/showcase/covidcare-screening.jpg",
-      "webp": "/showcase/covidcare-screening.webp"
+      "jpg": "/showcase/matter.jpg",
+      "webp": "/showcase/matter.webp"
     }
   }
 ]
