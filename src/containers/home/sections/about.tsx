@@ -8,15 +8,16 @@ export const Paragraphs = () => (
   <>
     <p>
       I&apos;m a Freelance Software Engineer with 11+ years of experience in developing and
-      maintaining robust web apps.
+      maintaining robust web applications.
     </p>
     <p>
-      My work experience stretches across various industries, from structured corporate environments
-      to dynamic and high-pressure environments such as tech startups and agencies.
+      I've honed my skills across diverse industries, from structured corporations to dynamic tech
+      startups and agencies. My expertise lies in crafting software solutions that streamline
+      business processes and boost efficiency.
     </p>
     <p>
-      Working in these environments has enabled me to develop software which improves the
-      productivity and efficiency of business processes.
+      As a seasoned remote worker of 6+ years, I've cultivated a strong work ethic and the ability
+      to thrive in flexible environments.
     </p>
   </>
 );
